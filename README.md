@@ -21,3 +21,8 @@ cover some of the most common ones:
 - Builder
 - Flyweight
 - Repository
+
+## Singleton
+
+If we want a class to only have one object, we use a singleton pattern.
+

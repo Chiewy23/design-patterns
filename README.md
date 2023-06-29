@@ -24,5 +24,14 @@ cover some of the most common ones:
 
 ## Singleton
 
-If we want a class to only have one object, we use a singleton pattern.
+If we want a class to only have one object, we use the singleton pattern.
 
+Consider the example of Database connectivity. When each object creates a unique Database 
+Connection to the Database, it increases the cost and expenses of the project.
+
+Thus, it is better to share a single connection rather than making extra irrelevant 
+connections.
+
+## Factory
+
+..

@@ -9,6 +9,7 @@ def singleton_example():
     print(singleton1 is singleton2)
 
 
+# ----- FACTORY PATTERN -----
 def factory_example():
     pass
 

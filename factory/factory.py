@@ -9,12 +9,20 @@ class Calculate:
 
 class Divide(Calculate):
     def calculate(self, a, b):
-        return a / b
+        try:
+            return float(a / b)
+        except ValueError as err:
+            print("Please provide float arguments")
+            return 0
 
 
 class Multiply(Calculate):
     def calculate(self, a, b):
-        return a * b
+        try:
+            return float(a * b)
+        except ValueError as err:
+            print("Please provide float or integer arguments")
+            return 0
 
 
 class CalculatorFactory:

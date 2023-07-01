@@ -17,7 +17,7 @@ class Multiply(Calculate):
         return a * b
 
 
-class CalculateFactory:
+class CalculatorFactory:
     @staticmethod
     def get_calculator(calculator_type):
         if calculator_type.lower() == "divide":

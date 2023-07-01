@@ -1,5 +1,5 @@
 from singleton.singleton import Singleton
-from factory.factory import CalculateFactory
+from factory.factory import CalculatorFactory
 
 
 # ----- SINGLETON PATTERN -----
@@ -12,8 +12,9 @@ def singleton_example():
 
 # ----- FACTORY PATTERN -----
 def factory_example():
-    multiplier = CalculateFactory.get_calculator("multiply")
-    divider = CalculateFactory.get_calculator("divide")
+    multiplier = CalculatorFactory.get_calculator("multiply")
+    divider = CalculatorFactory.get_calculator("divide")
+
     print(type(multiplier))
     print(type(divider))
 

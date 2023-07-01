@@ -23,7 +23,7 @@ class CalculateFactory:
         if calculator_type.lower() == "divide":
             return Divide()
 
-        if calculator_type.lower() == "multiple":
+        if calculator_type.lower() == "multiply":
             return Multiply()
 
         return None

@@ -37,3 +37,7 @@ connections.
 Have a dedicated place in which to create objects.
 
 The first rule of design patterns is always program to an interface (or at least, a base class).
+
+## Template Method
+
+Subclasses decide how to implement steps in an algorithm.

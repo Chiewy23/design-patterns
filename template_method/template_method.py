@@ -1,22 +1,27 @@
 class ExcelFile:
-    def read_data(self):
+    def execute(self):
+        self.__read_data__()
+        self.__process_data__()
+        self.__save_data__()
+
+    def __read_data__(self):
         print(f"Reads data from excel file - {self}")
 
-    def process_data(self):
+    def __process_data__(self):
         print(f"Processes data from excel file - {self}")
 
-    def save_data(self):
+    def __save_data__(self):
         print(f"Saves data to Db - {self}")
 
 
 class TextFile:
-    def read_data(self):
+    def __read_data__(self):
         print(f"Reads data from text file - {self}")
 
-    def process_data(self):
+    def __process_data__(self):
         print(f"Processes data from text file - {self}")
 
-    def save_data(self):
+    def __save_data__(self):
         print(f"Saves data to Db - {self}")
 
 

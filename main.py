@@ -1,5 +1,6 @@
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
+from template_method.template_method import ExcelFile, TextFile
 
 
 # ----- SINGLETON PATTERN -----
@@ -22,7 +23,17 @@ def factory_example():
     print(divider.calculate(4, 2))
 
 
+def template_method_example():
+    text_file_processor = TextFile()
+    excel_processor = ExcelFile()
+
+    text_file_processor.execute()
+    print("\n")
+    excel_processor.execute()
+
+
 if __name__ == '__main__':
     # singleton_example()
-    factory_example()
+    # factory_example()
+    template_method_example()
 

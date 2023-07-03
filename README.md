@@ -41,3 +41,9 @@ The first rule of design patterns is always program to an interface (or at least
 ## Template Method
 
 Subclasses decide how to implement steps in an algorithm.
+
+## Adapter
+
+Converts the interface of a class into another interface the client expects.
+
+Adapter lets classes work together which couldn't otherwise due to incompatible interfaces.

@@ -8,7 +8,7 @@ cover some of the most common ones:
 - Singleton :white_check_mark:
 - Factory :white_check_mark:
 - Template Method :white_check_mark:
-- Adapter
+- Adapter :white_check_mark:
 - Facade
 - Strategy
 - State

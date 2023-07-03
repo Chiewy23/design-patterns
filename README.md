@@ -2,8 +2,7 @@
 
 Design Patterns are known solutions to common problems.
 
-There are hundreds of design patterns available, so this repo will only
-cover some of the most common ones:
+There are hundreds of design patterns available, so this repo only covers some of the most common ones:
 
 - Singleton :white_check_mark:
 - Factory :white_check_mark:

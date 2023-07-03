@@ -1,3 +1,4 @@
 venv
 .idea
-singleton/__pycache__/*
+__pycache__
+.DS_Store

@@ -8,7 +8,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 - Factory :white_check_mark:
 - Template Method :white_check_mark:
 - Adapter :white_check_mark:
-- Facade
+- Facade :white_check_mark:
 - Strategy
 - State
 - Proxy
@@ -46,3 +46,7 @@ Subclasses decide how to implement steps in an algorithm.
 Converts the interface of a class into another interface the client expects.
 
 Adapter lets classes work together which couldn't otherwise due to incompatible interfaces.
+
+## Facade
+
+Simplifies the interface of a set of classes. It makes a software library easy to use.

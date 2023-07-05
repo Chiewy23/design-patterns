@@ -2,6 +2,7 @@ from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
 from template_method.template_method import ExcelFile, TextFile
 from adapter.adapter import Adapter
+from facade.facade import InsuranceFacade
 
 
 # ----- SINGLETON PATTERN -----
@@ -41,9 +42,16 @@ def adapter_example():
     print(result)
 
 
+# ----- ADAPTER -----
+def facade_example():
+    insurance_facade = InsuranceFacade(vin=34, dob="21.08.1996", state="Texas")
+    insurance_facade.get_quote()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
     # template_method_example()
-    adapter_example()
+    # adapter_example()
+    facade_example()
 

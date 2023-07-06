@@ -9,7 +9,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 - Template Method :white_check_mark:
 - Adapter :white_check_mark:
 - Facade :white_check_mark:
-- Strategy
+- Strategy :white_check_mark:
 - State
 - Proxy
 - Chain of responsibility
@@ -23,13 +23,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 
 ## Singleton
 
-If we want a class to only have one object, we use the singleton pattern.
-
-Consider the example of Database connectivity. When each object creates a unique Database 
-Connection to the Database, it increases the cost and expenses of the project.
-
-Thus, it is better to share a single connection rather than making extra irrelevant 
-connections.
+Ensures only one instance of a class is created.
 
 ## Factory
 
@@ -50,3 +44,7 @@ Adapter lets classes work together which couldn't otherwise due to incompatible 
 ## Facade
 
 Simplifies the interface of a set of classes. It makes a software library easy to use.
+
+## Strategy
+
+Enables an algorithm's behaviour to be selected at runtime.

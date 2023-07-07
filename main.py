@@ -4,6 +4,7 @@ from template_method.template_method import ExcelFile, TextFile
 from adapter.adapter import Adapter
 from facade.facade import InsuranceFacade
 from strategy.strategy import Context, Add, Subtract, Multiply
+from state.state import StateContext, StateOnline
 
 
 # ----- SINGLETON PATTERN -----
@@ -60,11 +61,21 @@ def strategy_example():
     print(strategy_multiply.execute_strategy(1, 2))
 
 
+# ----- STATE -----
+def state_example():
+    state_context = StateContext()
+    print(f"Is meeting online: {state_context.is_meeting_online()}")
+
+    state_context.set_current_state(StateOnline())
+    print(f"Is meeting online: {state_context.is_meeting_online()}")
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
     # template_method_example()
     # adapter_example()
     # facade_example()
-    strategy_example()
+    # strategy_example()
+    state_example()
 

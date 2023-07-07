@@ -26,4 +26,4 @@ class StateContext:
         self.current_state = state
 
     def is_meeting_online(self):
-        self.current_state.is_meeting_online()
+        return self.current_state.is_meeting_online()

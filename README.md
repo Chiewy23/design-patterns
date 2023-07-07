@@ -10,7 +10,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 - Adapter :white_check_mark:
 - Facade :white_check_mark:
 - Strategy :white_check_mark:
-- State
+- State :white_check_mark:
 - Proxy
 - Chain of responsibility
 - Bridge
@@ -48,3 +48,8 @@ Simplifies the interface of a set of classes. It makes a software library easy t
 ## Strategy
 
 Enables an algorithm's behaviour to be selected at runtime.
+
+## State
+
+Similar to the strategy pattern. However, in the state pattern there are usually only two implementations;
+an online state and offline state. In addition, a state pattern provides a default implementation.

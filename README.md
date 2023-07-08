@@ -53,3 +53,7 @@ Enables an algorithm's behaviour to be selected at runtime.
 
 Similar to the strategy pattern. However, in the state pattern there are usually only two implementations;
 an online state and offline state. In addition, a state pattern provides a default implementation.
+
+## Proxy
+
+Wraps an object to control access to it.

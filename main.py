@@ -5,6 +5,7 @@ from adapter.adapter import Adapter
 from facade.facade import InsuranceFacade
 from strategy.strategy import Context, Add, Subtract, Multiply
 from state.state import StateContext, StateOnline
+from proxy.proxy import ProxyServer
 
 
 # ----- SINGLETON PATTERN -----
@@ -70,6 +71,15 @@ def state_example():
     print(f"Is meeting online: {state_context.is_meeting_online()}")
 
 
+# ----- STATE -----
+def proxy_example():
+    tweet1 = ProxyServer("@BillGates", "Pass123")
+    tweet2 = ProxyServer("@BillGates", "Pass1234")
+
+    tweet1.display_tweets()
+    tweet2.display_tweets()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -77,5 +87,6 @@ if __name__ == '__main__':
     # adapter_example()
     # facade_example()
     # strategy_example()
-    state_example()
+    # state_example()
+    proxy_example()
 

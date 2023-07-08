@@ -11,7 +11,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 - Facade :white_check_mark:
 - Strategy :white_check_mark:
 - State :white_check_mark:
-- Proxy
+- Proxy :white_check_mark:
 - Chain of responsibility
 - Bridge
 - Composite

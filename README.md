@@ -12,7 +12,7 @@ There are hundreds of design patterns available, so this repo only covers some o
 - Strategy :white_check_mark:
 - State :white_check_mark:
 - Proxy :white_check_mark:
-- Chain of responsibility
+- Chain of responsibility :white_check_mark:
 - Bridge
 - Composite
 - Decorator
@@ -57,3 +57,10 @@ an online state and offline state. In addition, a state pattern provides a defau
 ## Proxy
 
 Wraps an object to control access to it.
+
+## Chain Of Responsibility
+
+Delegates commands to a chain of processing objects.
+
+A given group of objects is expected to solve a problem. If the first object can't solve it, it passes
+the data to the next object in the chain.

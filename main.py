@@ -72,7 +72,7 @@ def state_example():
     print(f"Is meeting online: {state_context.is_meeting_online()}")
 
 
-# ----- STATE -----
+# ----- PROXY -----
 def proxy_example():
     tweet1 = ProxyServer("@BillGates", "Pass123")
     tweet2 = ProxyServer("@BillGates", "Pass1234")

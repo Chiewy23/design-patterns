@@ -13,7 +13,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - State :white_check_mark:
 - Proxy :white_check_mark:
 - Chain of responsibility :white_check_mark:
-- Bridge
+- Bridge :white_check_mark:
 - Composite
 - Decorator
 - Observer

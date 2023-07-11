@@ -33,3 +33,13 @@ class ITDepartment(DepartmentBase):
 
     def assign_employee(self):
         self.employee.employee_type()
+
+
+class PartTimeEmployee(EmployeeBase):
+    def employee_type(self):
+        print("Part-time employee")
+
+
+class FullTimeEmployee(EmployeeBase):
+    def employee_type(self):
+        print("Full-time employee")

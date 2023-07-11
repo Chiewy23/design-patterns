@@ -19,8 +19,7 @@ class Numbers:
 
 
 class AddNumbers(ChainBase):
-    def __init__(self):
-        self.next_in_chain = SubtractNumbers()
+    next_in_chain = None
 
     def calculate(self, request):
         if request.calc_wanted == "add":
@@ -33,8 +32,7 @@ class AddNumbers(ChainBase):
 
 
 class SubtractNumbers(ChainBase):
-    def __init__(self):
-        self.next_in_chain = MultiplyNumbers()
+    next_in_chain = None
 
     def calculate(self, request):
         if request.calc_wanted == "subtract":
@@ -47,8 +45,7 @@ class SubtractNumbers(ChainBase):
 
 
 class MultiplyNumbers(ChainBase):
-    def __init__(self):
-        self.next_in_chain = AddNumbers()
+    next_in_chain = None
 
     def calculate(self, request):
         if request.calc_wanted == "multiply":

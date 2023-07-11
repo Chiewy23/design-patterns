@@ -6,6 +6,7 @@ from facade.facade import InsuranceFacade
 from strategy.strategy import Context, Add, Subtract, Multiply
 from state.state import StateContext, StateOnline
 from proxy.proxy import ProxyServer
+from chain_of_responsibility.chain_of_responsibility import Numbers, MultiplyNumbers, AddNumbers, SubtractNumbers
 
 
 # ----- SINGLETON PATTERN -----
@@ -80,6 +81,20 @@ def proxy_example():
     tweet2.display_tweets()
 
 
+# ----- CHAIN OF RESPONSIBILITY -----
+def chain_of_responsibility_example():
+    request = Numbers(5, 5, "multiply")
+    obj1 = AddNumbers()
+    obj2 = SubtractNumbers()
+    obj3 = MultiplyNumbers()
+
+    obj1.set_next_chain(obj2)
+    obj2.set_next_chain(obj3)
+    obj3.set_next_chain(obj1)
+
+    print(f"Result: {obj1.calculate(request)}")
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -88,5 +103,6 @@ if __name__ == '__main__':
     # facade_example()
     # strategy_example()
     # state_example()
-    proxy_example()
+    # proxy_example()
+    chain_of_responsibility_example()
 

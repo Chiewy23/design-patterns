@@ -60,3 +60,7 @@ Wraps an object to control access to it.
 
 Delegates commands to a chain of processing objects. A given group of objects is expected to solve a problem. 
 If the first object can't solve it, it passes the data to the next object in the chain.
+
+## Bridge
+
+Decouples an abstraction from its implementation so the two can vary independently.

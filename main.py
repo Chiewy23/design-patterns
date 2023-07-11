@@ -1,3 +1,4 @@
+from bridge.bridge import SalesDepartment, FullTimeEmployee, ITDepartment, PartTimeEmployee
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
 from template_method.template_method import ExcelFile, TextFile
@@ -95,6 +96,15 @@ def chain_of_responsibility_example():
     print(f"Result: {obj1.calculate(request)}")
 
 
+# ----- BRIDGE -----
+def bridge_example():
+    dep1 = SalesDepartment(FullTimeEmployee())
+    dep2 = ITDepartment(PartTimeEmployee())
+
+    dep1.assign_employee()
+    dep2.assign_employee()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -104,5 +114,6 @@ if __name__ == '__main__':
     # strategy_example()
     # state_example()
     # proxy_example()
-    chain_of_responsibility_example()
+    # chain_of_responsibility_example()
+    bridge_example()
 

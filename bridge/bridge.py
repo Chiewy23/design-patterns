@@ -24,6 +24,7 @@ class SalesDepartment(DepartmentBase):
         super().__init__(employee)
 
     def assign_employee(self):
+        print("Sales department assigned")
         self.employee.employee_type()
 
 
@@ -32,6 +33,7 @@ class ITDepartment(DepartmentBase):
         super().__init__(employee)
 
     def assign_employee(self):
+        print("IT department assigned")
         self.employee.employee_type()
 
 

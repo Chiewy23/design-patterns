@@ -28,7 +28,6 @@ Ensures only one instance of a class is created.
 ## Factory
 
 Have a dedicated place in which to create objects.
-
 The first rule of design patterns is always program to an interface (or at least, a base class).
 
 ## Template Method
@@ -38,7 +37,6 @@ Subclasses decide how to implement steps in an algorithm.
 ## Adapter
 
 Converts the interface of a class into another interface the client expects.
-
 Adapter lets classes work together which couldn't otherwise due to incompatible interfaces.
 
 ## Facade
@@ -60,7 +58,5 @@ Wraps an object to control access to it.
 
 ## Chain Of Responsibility
 
-Delegates commands to a chain of processing objects.
-
-A given group of objects is expected to solve a problem. If the first object can't solve it, it passes
-the data to the next object in the chain.
+Delegates commands to a chain of processing objects. A given group of objects is expected to solve a problem. 
+If the first object can't solve it, it passes the data to the next object in the chain.

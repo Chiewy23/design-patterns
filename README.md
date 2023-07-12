@@ -14,7 +14,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Proxy :white_check_mark:
 - Chain of responsibility :white_check_mark:
 - Bridge :white_check_mark:
-- Composite
+- Composite :white_check_mark:
 - Decorator
 - Observer
 - Builder
@@ -64,3 +64,10 @@ If the first object can't solve it, it passes the data to the next object in the
 ## Bridge
 
 Decouples an abstraction from its implementation so the two can vary independently.
+
+## Composite
+
+Clients treat collections of objects and individual objects uniformly.
+The composite pattern allows you to have a tree structure and treat each node in two ways:
+- Composite: It can have other objects below it.
+- Leaf: It has no objects below it.

@@ -1,4 +1,5 @@
 from bridge.bridge import SalesDepartment, FullTimeEmployee, ITDepartment, PartTimeEmployee
+from composite.composite import Developer, Manager
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
 from template_method.template_method import ExcelFile, TextFile
@@ -105,6 +106,23 @@ def bridge_example():
     dep2.assign_employee()
 
 
+# ----- COMPOSITE -----
+def composite_example():
+    dev1 = Developer(name="Charlie", salary=120000)
+    dev2 = Developer(name="Hannah", salary=120000)
+
+    manager1 = Manager(name="Jordan", salary=220000)
+    manager1.add_employee(dev1)
+    manager1.add_employee(dev2)
+
+    director1 = Manager(name="Suzanne", salary=320000)
+    director1.add_employee(manager1)
+
+    director1.print()
+    print("--------------------------------------------")
+    manager1.print()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -115,5 +133,6 @@ if __name__ == '__main__':
     # state_example()
     # proxy_example()
     # chain_of_responsibility_example()
-    bridge_example()
+    # bridge_example()
+    composite_example()
 

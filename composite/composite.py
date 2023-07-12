@@ -57,7 +57,7 @@ class Manager(EmployeeBase):
 
     def print(self):
         print("----- Manager -----")
-        print(f"Manager details: Name: {self.name}, Salary: {self.salary}")
+        print(f"Manager details - Name: {self.name}, Salary: {self.salary}\n")
 
         for emp in self.employees:
             emp.print()

@@ -30,7 +30,7 @@ class VanillaIceCream(IceCreamBase):
         return 1.00
 
 
-class IceCreamDecorator(IceCreamBase):
+class IceCreamDecoratorBase(IceCreamBase):
     seperator = ", "
 
     def __init__(self, topping=IceCreamBase()):
@@ -41,3 +41,25 @@ class IceCreamDecorator(IceCreamBase):
 
     def cost(self):
         return self.topping.cost()
+
+
+class NutsTopping(IceCreamDecoratorBase):
+    def __init__(self, topping=IceCreamBase()):
+        super().__init__(topping)
+
+    def get_description(self):
+        return super().get_description() + self.seperator + "Nuts"
+
+    def cost(self):
+        return super().cost() + 0.75
+
+
+class GummyTopping(IceCreamDecoratorBase):
+    def __init__(self, topping=IceCreamBase()):
+        super().__init__(topping)
+
+    def get_description(self):
+        return super().get_description() + self.seperator + "Gummy"
+
+    def cost(self):
+        return super().cost() + 0.50

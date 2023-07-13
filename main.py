@@ -1,5 +1,6 @@
 from bridge.bridge import SalesDepartment, FullTimeEmployee, ITDepartment, PartTimeEmployee
 from composite.composite import Developer, Manager
+from decorator.decorator import ChocolateIceCream, NutsTopping, GummyTopping
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
 from template_method.template_method import ExcelFile, TextFile
@@ -123,6 +124,16 @@ def composite_example():
     manager1.print()
 
 
+# ----- DECORATOR -----
+def decorator_example():
+    chocolate_ice_cream = ChocolateIceCream()
+
+    chocolate_ice_cream = NutsTopping(chocolate_ice_cream)
+    chocolate_ice_cream = GummyTopping(chocolate_ice_cream)
+
+    chocolate_ice_cream.print_details()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -134,4 +145,5 @@ if __name__ == '__main__':
     # proxy_example()
     # chain_of_responsibility_example()
     # bridge_example()
-    composite_example()
+    # composite_example()
+    decorator_example()

@@ -135,4 +135,3 @@ if __name__ == '__main__':
     # chain_of_responsibility_example()
     # bridge_example()
     composite_example()
-

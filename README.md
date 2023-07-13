@@ -15,7 +15,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Chain of responsibility :white_check_mark:
 - Bridge :white_check_mark:
 - Composite :white_check_mark:
-- Decorator
+- Decorator :white_check_mark:
 - Observer
 - Builder
 - Flyweight
@@ -71,3 +71,8 @@ Clients treat collections of objects and individual objects uniformly.
 The composite pattern allows you to have a tree structure and treat each node in two ways:
 - Composite: It can have other objects below it.
 - Leaf: It has no objects below it.
+
+## Decorator
+
+Allows behaviour to be added to an individual object.
+A decorator attaches additional responsibilities to an object.

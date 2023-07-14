@@ -16,7 +16,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Bridge :white_check_mark:
 - Composite :white_check_mark:
 - Decorator :white_check_mark:
-- Observer
+- Observer :white_check_mark:
 - Builder
 - Flyweight
 - Repository
@@ -76,3 +76,9 @@ The composite pattern allows you to have a tree structure and treat each node in
 
 Allows behaviour to be added to an individual object.
 A decorator attaches additional responsibilities to an object.
+
+## Observer
+
+Publisher-Subscriber model. A pattern in which an object, called the subject, maintains a 
+list of its dependents, the observers, and notifies them automatically of any state changes,
+usually by calling one of their methods.

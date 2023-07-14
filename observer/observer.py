@@ -60,7 +60,7 @@ class User(ObserverBase):
 
     def update(self, blog_article):
         self.article = blog_article
-        print("State change reported by subject.")
+        print(f"State change reported by subject - {self}.")
 
     def print_article(self):
-        print(f"User article: {self.article}")
+        print(f"User {self} article: {self.article}")

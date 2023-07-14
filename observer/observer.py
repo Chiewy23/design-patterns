@@ -54,10 +54,13 @@ class Blog(SubjectBase):
 class User(ObserverBase):
     def __init__(self, blog=Blog()):
         self.blog = blog
+        self.article = ""
+
         self.blog.register_observer(self)
 
     def update(self, blog_article):
-        pass
+        self.article = blog_article
+        print("State change reported by subject.")
 
     def print_article(self):
-        pass
+        print(f"User article: {self.article}")

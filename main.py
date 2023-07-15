@@ -1,4 +1,5 @@
 from bridge.bridge import SalesDepartment, FullTimeEmployee, ITDepartment, PartTimeEmployee
+from builder.builder import AutoBuilder, EngineerDirector
 from composite.composite import Developer, Manager
 from decorator.decorator import ChocolateIceCream, NutsTopping, GummyTopping
 from observer.observer import Blog, User
@@ -135,7 +136,7 @@ def decorator_example():
     chocolate_ice_cream.print_details()
 
 
-# ----- DECORATOR -----
+# ----- OBSERVER -----
 def observer_example():
     blog = Blog()
     user1 = User(blog)
@@ -144,6 +145,15 @@ def observer_example():
     blog.post_new_article("This is the newest article")
     user1.print_article()
     user2.print_article()
+
+
+# ----- BUILDER -----
+def builder_example():
+    mercedes_benz = AutoBuilder()
+    engineer = EngineerDirector(mercedes_benz)
+
+    engineer.construct_insurance()
+    engineer.return_insurance()
 
 
 if __name__ == '__main__':
@@ -159,4 +169,5 @@ if __name__ == '__main__':
     # bridge_example()
     # composite_example()
     # decorator_example()
-    observer_example()
+    # observer_example()
+    builder_example()

@@ -98,3 +98,17 @@ class BoatBuilder(InsuranceBuilderBase):
 
     def get_insurance(self):
         print(self.insurance)
+
+
+class EngineerDirector:
+    def __init__(self, insurance_builder):
+        self.insurance_builder = insurance_builder
+
+    def return_insurance(self):
+        return self.insurance_builder.get_insurance()
+
+    def construct_insurance(self):
+        # Here you can define the order in which components are created.
+        self.insurance_builder.build_location()
+        self.insurance_builder.build_vehicle()
+        self.insurance_builder.build_driver()

@@ -17,7 +17,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Composite :white_check_mark:
 - Decorator :white_check_mark:
 - Observer :white_check_mark:
-- Builder
+- Builder :white_check_mark:
 - Flyweight
 - Repository
 

@@ -82,3 +82,7 @@ A decorator attaches additional responsibilities to an object.
 Publisher-Subscriber model. A pattern in which an object, called the subject, maintains a 
 list of its dependents, the observers, and notifies them automatically of any state changes,
 usually by calling one of their methods.
+
+## Builder
+
+If there is need to perform a series of steps to create a complex object, then use the builder pattern.

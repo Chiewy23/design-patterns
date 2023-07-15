@@ -1,3 +1,24 @@
+from abc import abstractmethod
+
+
+class InsuranceBuilderBase:
+    @abstractmethod
+    def build_driver(self):
+        pass
+
+    @abstractmethod
+    def build_vehicle(self):
+        pass
+
+    @abstractmethod
+    def build_location(self):
+        pass
+
+    @abstractmethod
+    def get_insurance(self):
+        pass
+
+
 class Insurance:
     def __init__(self, driver, location, vehicle, price):
         self.driver = driver

@@ -56,3 +56,29 @@ class Vehicle:
         return f"{self.model} ({self.year})"
 
 
+class AutoBuilder(InsuranceBuilderBase):
+    def build_driver(self):
+        pass
+
+    def build_vehicle(self):
+        pass
+
+    def build_location(self):
+        pass
+
+    def get_insurance(self):
+        pass
+
+
+class BoatBuilder(InsuranceBuilderBase):
+    def build_driver(self):
+        pass
+
+    def build_vehicle(self):
+        pass
+
+    def build_location(self):
+        pass
+
+    def get_insurance(self):
+        pass

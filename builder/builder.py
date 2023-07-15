@@ -61,16 +61,21 @@ class AutoBuilder(InsuranceBuilderBase):
         self.insurance = Insurance()
 
     def build_driver(self):
-        pass
+        driver_name = input("Enter driver name: ")
+        driver_age = int(input("Enter driver age: "))
+        self.insurance.driver = Driver(driver_name, driver_age)
 
     def build_vehicle(self):
-        pass
+        vehicle_model = input("Enter vehicle model: ")
+        vehicle_year = int(input("Enter vehicle year: "))
+        self.insurance.vehicle = Vehicle(vehicle_model, vehicle_year)
 
     def build_location(self):
-        pass
+        zipcode = input("Enter Zipcode: ")
+        self.insurance.location = Location(zipcode)
 
     def get_insurance(self):
-        pass
+        print(self.insurance)
 
 
 class BoatBuilder(InsuranceBuilderBase):

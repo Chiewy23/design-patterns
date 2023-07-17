@@ -2,6 +2,7 @@ from bridge.bridge import SalesDepartment, FullTimeEmployee, ITDepartment, PartT
 from builder.builder import AutoBuilder, EngineerDirector
 from composite.composite import Developer, Manager
 from decorator.decorator import ChocolateIceCream, NutsTopping, GummyTopping
+from flyweight.flyweight import Document
 from observer.observer import Blog, User
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
@@ -156,6 +157,22 @@ def builder_example():
     engineer.return_insurance()
 
 
+# ----- FLYWEIGHT -----
+def flyweight_example():
+    doc1 = Document()
+
+    doc1.type_letter("a")
+    doc1.type_letter("a")
+    doc1.type_letter("a")
+    doc1.type_letter("b")
+    doc1.type_letter("b")
+    doc1.type_letter("b")
+    doc1.type_letter("c")
+
+    doc1.process()
+    doc1.report()
+
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()
@@ -170,4 +187,5 @@ if __name__ == '__main__':
     # composite_example()
     # decorator_example()
     # observer_example()
-    builder_example()
+    # builder_example()
+    flyweight_example()

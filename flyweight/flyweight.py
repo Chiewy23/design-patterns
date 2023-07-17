@@ -33,4 +33,8 @@ class Document:
 
     def process(self):
         for letter in self.letters:
-            print(letter)
+            letter.display()
+
+    def report(self):
+        print(f"Total objects made: {self.memory.total_objects_made()}")
+

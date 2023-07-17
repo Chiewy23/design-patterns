@@ -1,6 +1,7 @@
 # Popular Design Patterns
 
-Design Patterns are general, reusable solutions to a commonly occurring problem within a given context in software design. A design pattern is not a finished design which can be transformed directly into source or machine code.
+Design Patterns are general, reusable solutions to a commonly occurring problem within a given context in software 
+design. A design pattern is not a finished design which can be transformed directly into source or machine code.
 
 There are hundreds of design patterns available; this repo only covers some of the most common ones:
 

@@ -18,7 +18,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Decorator :white_check_mark:
 - Observer :white_check_mark:
 - Builder :white_check_mark:
-- Flyweight
+- Flyweight :white_check_mark:
 - Repository
 
 ## Singleton
@@ -86,3 +86,7 @@ usually by calling one of their methods.
 ## Builder
 
 If there is need to perform a series of steps to create a complex object, then use the builder pattern.
+
+## Flyweight
+
+...

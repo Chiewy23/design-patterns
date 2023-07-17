@@ -89,4 +89,4 @@ If there is need to perform a series of steps to create a complex object, then u
 
 ## Flyweight
 
-...
+Is used to minimize memory use by reusing objects as much as possible.

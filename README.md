@@ -20,7 +20,7 @@ There are hundreds of design patterns available; this repo only covers some of t
 - Observer :white_check_mark:
 - Builder :white_check_mark:
 - Flyweight :white_check_mark:
-- Repository
+- Repository :white_check_mark:
 
 ## Singleton
 
@@ -91,3 +91,7 @@ If there is need to perform a series of steps to create a complex object, then u
 ## Flyweight
 
 Is used to minimize memory use by reusing objects as much as possible.
+
+## Repository
+
+..

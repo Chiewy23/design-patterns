@@ -173,6 +173,10 @@ def flyweight_example():
     doc1.report()
 
 
+# ----- REPOSITORY -----
+def repository_example():
+    pass
+
 if __name__ == '__main__':
     # singleton_example()
     # factory_example()

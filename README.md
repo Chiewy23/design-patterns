@@ -94,4 +94,4 @@ Is used to minimize memory use by reusing objects as much as possible.
 
 ## Repository
 
-..
+Used when your application needs to store data.

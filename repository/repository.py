@@ -7,9 +7,9 @@ class Contact:
 
     def __str__(self):
         temp = ""
-        if self is Friend:
+        if type(self) is Friend:
             temp = f" Friend name: {self.name} Ph: {self.phone_number}"
-        elif self is Work:
+        elif type(self) is Work:
             temp = f" Work name: {self.name} Email: {self.email}"
 
         return temp
@@ -55,7 +55,7 @@ class InMemoryList(RepositoryBase):
         result = ""
 
         for item in self.list:
-            result += f"{item}\n"
+            result = result + f"{item}\n"
 
         return result
 
@@ -71,17 +71,17 @@ class TextFileRepository(RepositoryBase):
         print("Removing from text file.")
 
     def get_all(self):
-        print("Printing all items in text file.")
+        return "Printing all items in text file."
 
 
 class ContactUI:
     def __init__(self, repository):
-        if repository is not RepositoryBase:
+        if RepositoryBase not in repository.__class__.__bases__:
             raise Exception("Repository must be of type RepositoryBase")
         self.repository = repository
 
     def append(self, contact):
-        self.repository.add(contact)
+        self.repository.append(contact)
 
     def remove(self, contact):
         self.repository.remove(contact)

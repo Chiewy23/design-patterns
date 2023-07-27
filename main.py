@@ -4,6 +4,7 @@ from composite.composite import Developer, Manager
 from decorator.decorator import ChocolateIceCream, NutsTopping, GummyTopping
 from flyweight.flyweight import Document
 from observer.observer import Blog, User
+from repository.repository import TextFileRepository, ContactUI, Friend, Work, InMemoryList
 from singleton.singleton import Singleton
 from factory.factory import CalculatorFactory
 from template_method.template_method import ExcelFile, TextFile
@@ -175,7 +176,23 @@ def flyweight_example():
 
 # ----- REPOSITORY -----
 def repository_example():
-    pass
+    repository = InMemoryList()
+    text_file_repo = TextFileRepository("my_file.txt")
+
+    contact_ui1 = ContactUI(repository)
+    contact_ui2 = ContactUI(text_file_repo)
+
+    contact1 = Friend(name="Chris", phone_number="01234567891")
+    contact2 = Work(name="John", email="john@email.com")
+
+    contact_ui1.append(contact1)
+    contact_ui1.append(contact2)
+
+    contact_ui2.append(contact1)
+    contact_ui2.append(contact2)
+
+    contact_ui1.get_all_contacts()
+    contact_ui2.get_all_contacts()
 
 
 if __name__ == '__main__':
@@ -193,4 +210,5 @@ if __name__ == '__main__':
     # decorator_example()
     # observer_example()
     # builder_example()
-    flyweight_example()
+    # flyweight_example()
+    repository_example()

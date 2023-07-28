@@ -9,14 +9,15 @@ Adapter lets classes work together which couldn't otherwise due to incompatible 
 
 class TestMain(unittest.TestCase):
     def setUp(self):
-        print("----- About to test a function -----")
+        print("----- Adapter Setup -----")
+        self.adapter = Adapter()
 
     def test_adapter(self):
-        # self.assertEqual(result, 15)
-        pass
+        result = self.adapter.connect_to_file_system(543)
+        self.assertEqual(result, 55)
 
     def tearDown(self):
-        print("----- Cleaning up -----")
+        print("----- Adapter Teardown -----")
 
 
 if __name__ == '__main__':

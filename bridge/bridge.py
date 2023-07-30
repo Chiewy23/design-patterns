@@ -34,7 +34,7 @@ class SalesDepartment(DepartmentBase):
         self.department_employees.append(self.employee)
 
     def get_employee_count(self):
-        return self.department_employees.count()
+        return len(self.department_employees)
 
 
 class ITDepartment(DepartmentBase):
@@ -48,7 +48,7 @@ class ITDepartment(DepartmentBase):
         self.department_employees.append(self.employee)
 
     def get_employee_count(self):
-        return self.department_employees.count()
+        return len(self.department_employees)
 
 
 class PartTimeEmployee(EmployeeBase):

@@ -17,24 +17,38 @@ class DepartmentBase:
     def assign_employee(self):
         pass
 
+    @abstractmethod
+    def get_employee_count(self):
+        pass
+
 
 # ----- SUB TYPES -----
 class SalesDepartment(DepartmentBase):
     def __init__(self, employee):
         super().__init__(employee)
+        self.department_employees = []
 
     def assign_employee(self):
         print("Sales department assigned")
         self.employee.employee_type()
+        self.department_employees.append(self.employee)
+
+    def get_employee_count(self):
+        return self.department_employees.count()
 
 
 class ITDepartment(DepartmentBase):
     def __init__(self, employee):
         super().__init__(employee)
+        self.department_employees = []
 
     def assign_employee(self):
         print("IT department assigned")
         self.employee.employee_type()
+        self.department_employees.append(self.employee)
+
+    def get_employee_count(self):
+        return self.department_employees.count()
 
 
 class PartTimeEmployee(EmployeeBase):
